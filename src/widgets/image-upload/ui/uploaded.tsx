@@ -10,7 +10,7 @@ type UploadedProps = {
 
 const Uploaded: React.FC<UploadedProps> = ({ imagePath }) => {
   const imageSrc = `${
-    process.env.NEXT_PUBLIC_SUPABSE_URL as string
+    process.env.NEXT_PUBLIC_SUPABASE_URL as string
   }/storage/v1/object/public/images/${imagePath}`;
 
   return (
