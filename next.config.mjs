@@ -7,8 +7,5 @@ const config = {
     locales: ["en"],
     defaultLocale: "en",
   },
-  env: {
-    SUPABASE_URL: "https://rheupcwqqudhdkavfpvd.supabase.co",
-  },
 };
 export default config;
