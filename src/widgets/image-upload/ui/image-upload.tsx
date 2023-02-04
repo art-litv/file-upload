@@ -17,7 +17,7 @@ const ImageUpload: React.FC = () => {
 
     const path =
       ((imageFile as FileWithPath).path || imageFile.name) +
-      new Date().toISOString();
+      `?date=${new Date().toISOString()}`;
 
     try {
       const { data } = await supabase.storage
